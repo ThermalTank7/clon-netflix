@@ -1,0 +1,30 @@
+---
+const titulo = [
+    {
+        titulo1: "Películas y series ilimitadas y mucho más",
+        titulo2: "Disfruta donde quieras. Cancela cuando quieras.",
+        titulo3: "¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.",
+
+    }
+]
+import Layout from '../layouts/Layout.astro';
+
+---
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+{titulo.map(({titulo1, titulo2, titulo3}) =>(
+<div class="grid justify-items-center p-[200px]">
+<h1 class=" text-5xl pb-3"><b>
+{titulo1}</b>
+</h1>
+<p class="text-3xl pb-3">
+{titulo1}
+</p>
+<p class="text-2xl pb-4">
+{titulo3}
+</p>
+<div class="">
+<input class="mr-5 w-[300px] py-1 pl-5 pr-8 rounded-sm bg-transparent border border-white text-xl" placeholder="Email" type="text" name="" id="">
+<button class=" bg-red-700 h-[50px] w-[200px] text-xl"><b>Comenzar <i class="bx bx-right-arrow-alt fill-white" ></i></b></button>
+</div>
+</div>
+))}
