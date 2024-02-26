@@ -6,11 +6,13 @@ import Disfruta from '../components/Disfruta.astro';
 import Descarga from '../components/Descarga.astro';
 import Donde from '../components/Donde.astro';
 import CreaPerfiles from '../components/CreaPerfiles.astro';
+import Preguntas from '../components/Preguntas.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Netflix Colombia. Ve series online, ve peliculas online.">
 	<main>
-	<div class=" h-screen" style="background-image: url(/images/fondo.jpg);">
+	<div class=" md:h-screen" style="background-image: url(/images/fondo.jpg);">
 		<Nav/>
 		<Hero/>
 	</div>
@@ -18,6 +20,8 @@ import CreaPerfiles from '../components/CreaPerfiles.astro';
 		<Descarga/>
 		<Donde/>
 		<CreaPerfiles/>
+		<Preguntas/>
+		<Footer/>
 	</main>
 </Layout>
 
